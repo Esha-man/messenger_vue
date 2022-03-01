@@ -1,6 +1,10 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import App from "./App"
+import common from "@/components/common"
 
-createApp(App).use(store).use(router).mount('#app')
+console.log(common)
+const app = createApp(App)
+common.forEach((el)=>{
+    app.component(el.name, el)
+})
+app.mount('#app')
