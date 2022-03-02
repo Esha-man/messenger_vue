@@ -11,7 +11,7 @@
         v-model="post.description"
         type="text"
         placeholder="add description"></input-common>
-    <button-common @click="createPost">Post</button-common>
+    <button-common @click="createPost">post</button-common>
   </form>
 </template>
 
@@ -47,9 +47,10 @@ export default {
 .form {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin: 5px;
+  padding: 20px;
+  /*margin: 5px;*/
   border: 2px solid #8b8bf3;
+  border-radius: 10px;
 }
 
 .span {

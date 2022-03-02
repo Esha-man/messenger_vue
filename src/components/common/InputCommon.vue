@@ -20,6 +20,7 @@ export default {
 <style scoped>
 .inputCommon {
   width: 100%;
-  margin-top: 5px;
+  margin: 5px 5px 0 0;
+  border-radius: 7px;
 }
 </style>

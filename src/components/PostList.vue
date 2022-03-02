@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h3>Users list</h3>
+  <div v-show="posts.length > 0" class="postList">
+    <h3 class="title">Posts list</h3>
     <one-post
         :key="post.id"
         class="post"
@@ -8,9 +8,11 @@
         v-bind:posts="post"
         @remove="$emit('remove', post)"
     >
-
     </one-post>
   </div>
+  <h3 v-show="posts.length === 0" style="color: green" class="title">
+    I wait your post!
+  </h3>
 </template>
 
 <script>
@@ -18,6 +20,7 @@
 import OnePost from "@/components/OnePost";
 
 export default {
+  name: "PostList",
   components: {OnePost},
   props: {
     posts: {
@@ -29,5 +32,11 @@ export default {
 </script>
 
 <style scoped>
+.postList {
 
+}
+
+.title {
+  padding: 10px;
+}
 </style>
