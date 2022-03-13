@@ -37,7 +37,6 @@ export default {
 .dialog__content {
   margin: auto;
   background: white;
-  /*border: 2px solid #8b8bf3;*/
   border-radius: 10px;
   min-height: 100px;
   min-width: 400px;

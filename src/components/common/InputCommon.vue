@@ -1,5 +1,10 @@
 <template>
-  <input :value="modelValue" @input="updateInput" class="inputCommon" type="text">
+  <input
+    :value="modelValue"
+    @input="updateInput"
+    class="inputCommon"
+    type="text"
+  />
 </template>
 
 <script>
@@ -10,17 +15,17 @@ export default {
   },
   methods: {
     updateInput(event) {
-      this.$emit("update:modelValue", event.target.value)
-    }
-  }
-
-}
+      this.$emit("update:modelValue", event.target.value);
+    },
+  },
+};
 </script>
 
 <style scoped>
 .inputCommon {
   width: 100%;
   margin: 5px 5px 0 0;
-  border-radius: 7px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 </style>

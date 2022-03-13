@@ -17,11 +17,13 @@ export default {
 <style scoped>
 .buttonCommon {
   align-self: flex-end;
-  width: 75px;
-  height: 35px;
+  width: 90px;
+  height: 40px;
   margin-top: 10px;
   padding: 5px;
   border: 1px solid black;
-  background: beige;
+  border-radius: 5px;
+  background: bisque;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
 }
 </style>

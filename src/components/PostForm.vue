@@ -6,11 +6,11 @@
         v-model="post.title"
         type="text"
         placeholder="add title"></input-common>
-    <span class="span"><strong>Description:</strong></span>
+    <span class="span"><strong>body:</strong></span>
     <input-common
-        v-model="post.description"
+        v-model="post.body"
         type="text"
-        placeholder="add description"></input-common>
+        placeholder="add body"></input-common>
     <button-common @click="createPost">post</button-common>
   </form>
 </template>
@@ -26,7 +26,7 @@ export default {
     return {
       post: {
         title: "",
-        description: "",
+        body: "",
       }
     }
   },
@@ -36,7 +36,7 @@ export default {
       this.$emit("createNewPost", this.post)
       this.post = {
         title: "",
-        description: "",
+        body: "",
       }
     }
   }

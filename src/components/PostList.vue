@@ -1,6 +1,6 @@
 <template>
   <div v-show="posts.length > 0" class="postList">
-    <h3 class="title">Posts list</h3>
+    <h3 class="postList">Posts list</h3>
     <one-post
         :key="post.id"
         class="post"
@@ -10,7 +10,7 @@
     >
     </one-post>
   </div>
-  <h3 v-show="posts.length === 0" style="color: green" class="title">
+  <h3 v-show="posts.length === 0" class="title">
     I wait your post!
   </h3>
 </template>
@@ -38,5 +38,6 @@ export default {
 
 .title {
   padding: 10px;
+  
 }
 </style>
