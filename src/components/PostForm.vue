@@ -3,14 +3,16 @@
     <h4>Add new post</h4>
     <span class="span"><strong>Title:</strong></span>
     <input-common
-        v-model="post.title"
-        type="text"
-        placeholder="add title"></input-common>
+      v-model="post.title"
+      type="text"
+      placeholder="add title"
+    ></input-common>
     <span class="span"><strong>body:</strong></span>
     <input-common
-        v-model="post.body"
-        type="text"
-        placeholder="add body"></input-common>
+      v-model="post.body"
+      type="text"
+      placeholder="add body"
+    ></input-common>
     <button-common @click="createPost">post</button-common>
   </form>
 </template>
@@ -21,26 +23,26 @@ import InputCommon from "@/components/common/InputCommon";
 
 export default {
   name: "PostForm",
-  components: {InputCommon, ButtonCommon},
+  components: { InputCommon, ButtonCommon },
   data() {
     return {
       post: {
         title: "",
         body: "",
-      }
-    }
+      },
+    };
   },
   methods: {
     createPost() {
-      this.post.id = Date.now()
-      this.$emit("createNewPost", this.post)
+      this.post.id = Date.now();
+      this.$emit("createNewPost", this.post);
       this.post = {
         title: "",
         body: "",
-      }
-    }
-  }
-}
+      };
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -56,6 +58,4 @@ export default {
 .span {
   margin-top: 10px;
 }
-
-
 </style>
