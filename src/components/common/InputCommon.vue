@@ -23,9 +23,11 @@ export default {
 
 <style scoped>
 .inputCommon {
-  width: 100%;
+  background-color: #fff;
+  max-width: 100%;
   margin: 5px 5px 0 0;
   border: 1px solid black;
   border-radius: 5px;
+  padding-left: 7px;
 }
 </style>

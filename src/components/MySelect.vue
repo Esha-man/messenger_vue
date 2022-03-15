@@ -31,8 +31,8 @@ this.$emit("update:modelValue", event.target.value)
   height: 40px;
   margin-top: 10px;
   padding: 5px;
-  background: white;
-  border: 1px solid black;
+  background: #fff;
+  border: 2px solid black;
   box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
 
   border-radius: 5px;
